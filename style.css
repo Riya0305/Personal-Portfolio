@@ -1,16 +1,205 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root{
+    --primary-color: #a855f7;
+    --primary-color-dark: #9333ea;
+    --secondary-color: #ca8a04;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --extra-light: #faf5ff;
+    --max-width: 1200px;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: beige;
+    z-index: 99;
+}
+
+.nav_content{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav .logo a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: .3s;
+}
+
+nav .logo a:hover{
+    color: var(--primary-color-dark);
+}
+
+nav .checkbox{
+    display: none;
+}
+
+nav input{
+    display: none;
+}
+
+nav .checkbox i{
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a{
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+ul li a:hover{
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.section{
+    background-color: var(--extra-light);
+}
+
+.section_content{
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;   
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle{
+    letter-spacing: 2px;
+    color: var(--text-light);
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom:  1rem;
+}
+
+.title span{
+    font-weight: 600;
+}
+
+@media(width < 750px){
+    nav .checkbox{
+        display: block;
+    }
+
+    ul{
+        position:absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 85px;
+        background-color: var(--extra-light);
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    nav #check:checked ~ ul{
+        left: 0;
+    }
+
+    ul li a{
+        font-size: 1.25rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*General Styles */
+/* google fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #fdfdf5; /* Egg-white background */
-    transition: background-color 0.3s ease;
+    background-color: #000000; 
 }
 
 header {
-    background-color: #b3d9ff; /* Pale blue */
-    padding: 15px;
+    background-color: #000000; /* Pale blue */
+    /* padding: 15px;
     color: white;
     text-align: center;
     position: sticky;
@@ -18,52 +207,56 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
-}
+} */
 
-header:hover {
+/* header:hover {
     background-color: #99ccff; /* Slightly darker blue on hover */
-}
+/* } */ 
 
-nav ul {
+/* nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-}
+    text-align: center;
+} */
 
-nav ul li {
+/* nav ul li {
     margin: 0 15px;
-}
+    display: inline-block;
+    list-style-type: none;
+} */
 
-nav ul li a {
+/* nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
-}
+} */
 
-nav ul li a:hover {
+/* nav ul li a:hover {
     color: #ffffcc; /* Pale yellow on hover */
-}
+/* } */
 
-.section {
+/* .section {
     padding: 40px 20px;
     text-align: center;
-}
+} */
 
 /* Hero Section */
-.hero {
+/* Hero Section */
+/* .hero {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; 
+    align-items: center; 
     gap: 20px;
-}
+    text-align: left;
+/* } */ 
 
-.headshot {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+/* .headshot {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
     border: 3px solid #b3d9ff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -74,32 +267,18 @@ nav ul li a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-h1, h2, h3 {
-    color: #4d4d4d;
+.hero h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
-.project {
-    border: 1px solid #ddd;
-    background-color: #ffffff;
-    margin: 10px auto;
-    padding: 15px;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+.hero p {
+    margin: 5px 0; 
 }
-
-.project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Resume Section */
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffcccc; /* Pale pink */
+    background-color: #ffcccc; 
     color: #333;
     border: none;
     border-radius: 5px;
@@ -109,15 +288,15 @@ h1, h2, h3 {
 }
 
 .btn:hover {
-    background-color: #ff9999; /* Slightly darker pink */
+    background-color: #ff9999; 
     transform: scale(1.1);
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 15px;
     background-color: #f2f2f2;
     color: #333;
     border-top: 1px solid #ddd;
-}
+}  */
