@@ -1,6 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Riya Jain </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo_pink.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>AL | ML Enthusiast</p>
+            <h1>Hi, I'm <span>Riya Jain</span><br>Computer Science student at CSUF</h1>
+        </div>
+    </div>
+</div>
+<!-- -------------about------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Headshot copy.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Hi! My name is Riya, I am a third year computer science student at Cal State Fullerton. Some of my interests in the field lie in Artificial Intelligence and Machine Learning. I have pursued research projects that have helped me gain knowledge in topics like data science, machine learning, stocks, trading and many more. write moreeeeeeeeeeeeeeeeeeeee</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('resume')">Resume</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>AI/ML</span><br>GenAI<br>Prompt Engineering</li>
+                        <li><span>Data Science</span><br>Data Manipulation<br>Data Analysis<br>Data Analytics</li>
+                        <li><span>Languages</span><br>Python<br>HTML\CSS<br>C++</li>
+                        <li><span>Libraries</span><br>Sckit Learn<br>Pandas<br>Numpy</li>
+                        <li><span>Software Engineering</span><br>Scrum<br>Agile</li>
+                        <li><span>Software</span><br>Jupyter Notebook<br>Google Colab<br>Linux/Unix<br>VSCode</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>May 2024-Present</span><br>Coding Minds Academy</li>
+                        <li><span>May 2024-August 2024</span><br>CIC | PCUBED - Data Science Project with Dr. Bein</li>
+                        <li><span>May 2023-August 2023</span><br>CIC | PCUBED - Pairs Trading Project with Dr. Bein</li>
+                        <li><span>June 2021- August 2021</span><br>Ralphs' Grocery Store</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>August 2018-May 2022</span><br>Portola High School</li>
+                        <li><span>August 2022 - December 2025</span><br>California State University Fullerton<br>Bachelor's of Science - Computer Science</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="resume">
+                    <ul>
+                        <li><a href="Resume_RiyaJain(updatedoct2024) copy.pdf" download class="btn"> ~ Download my Resume! ~  </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------projects------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="project-list">
+            <div>
+                <i class="ri-aliens-line"></i>
+                <h2>Space Invaders Gameboy – Theta Tau – Phi Epsilon Chapter(CSUF)</h2>
+                <p>Utilized PyGames to develop a 2D array and display a ship at the bottom of the screen for a game interface. <br> Integrated a Raspberry Pi with a 3D-printed Gameboy to display a coded Space Invaders game on the screen. <br>Applied AutoCAD and SolidWorks to design and measure the overall dimensions of the Gameboy.</p>
+                <a href = "#">Learn more</a>
+            </div>
+            <div>
+                <i class="ri-music-line"></i>
+                <h2>Forte Music Player</h2>
+                <p>Developed a music player integrated with Spotify via the Spotify API, enabling users to sign in to their Spotify accounts. <br>Primarily utilized HTML, CSS and JavaScript for the development of the user interface and functionality.</p>
+                <a href = "#">Learn more</a>
+            </div>
+            <div>
+                <i class="ri-emotion-happy-line"></i>
+                <h2>CaptionToColor</h2>
+                <p>Created a website using HTML and CSS during FullyHacks, incorporating sentiment analysis. <br>Leveraged the Twitter API to analyze user-generated captions or posts, applying sentiment analysis techniques.
+                <br>Trained our model using this to categorize captions into three moods: “Happy”: Yellow, “Sad”: Blue, “Neutral”: Pink, assigning
+                    each user entry to the appropriate mood category..</p>
+                <a href = "#">Learn more</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- ----------projects------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1 class="subtitle">Contact Me</h1> 
+               <p>riyajain@csu.fullerton.edu</p>
+               <div class="social-icons">
+                <a href="https://www.linkedin.com/in/riyajain20/"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="mailto:riyajain0520@gmail.com?cc=riyajain@csu.fullerton.edu"><i class="ri-mail-line"></i></a>
+               </div>
+            </div>
+            <div class="contact-right"></div>
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder=" Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE-edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
@@ -89,7 +295,7 @@
 
 
 
-
+ -->
 
 <!-- <!DOCTYPE html>
 
@@ -97,22 +303,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"m>
     <title>Riya Jain</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
+    <body>
         <nav>
-            <ul>
-                <li><a href="#Home">HOME</a></li>
-                <li><a href="#About Me">ABOUT</a></li>
-                <li><a href="#Projects">PROJECT</a></li>
-                <li><a href="#Resume">RESUME</a></li>
-                <li><a href="#Contact">CONTACT</a></li>
-            </ul>
+            <div class= "nav_content">
+            <div class="logo"><a href ="#">Riya</a></div>
+                <label for="check" class="checkbox">
+                    <i class="ri-menu-line"></i>
+                </label>
+                <input type="checkbox" name"check" id="check">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me!</a></li>
+                </ul>
+            </div>
         </nav>
-    </header>
-
     <section id="home" class="section">
         <div class="hero">
             <img src="images/Headshot copy.JPG" alt="Your Headshot" class="headshot" style="width: 200px; height: 300px;">
@@ -156,6 +368,10 @@
             <input type="email" id="email" placeholder="Your Email" required>
             <textarea id="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
+            <label>
+                <i class="ri-linkedin-box-fill"></i>
+            </label>
+
         </form>
     </section>
 
