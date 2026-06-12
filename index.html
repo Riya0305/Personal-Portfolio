@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Riya Jain </title>
+    <title>Riya Jain</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +12,7 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo_pink.png" class="logo">
+            <img src="images/logo_pink.png" class="logo" alt="Riya Jain logo">
             <ul>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -21,45 +21,84 @@
             </ul>
         </nav>
         <div class="header-text">
-            <p>AL | ML Enthusiast</p>
+            <p>AI | ML Enthusiast</p>
             <h1>Hi, I'm <span>Riya Jain</span><br>Computer Science student at CSUF</h1>
         </div>
     </div>
 </div>
-<!-- -------------about------------- -->
+
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/Headshot copy.JPG">
+                <img src="images/Headshot copy.JPG" alt="Riya Jain headshot">
             </div>
             <div class="about-col-2">
                 <h1 class="subtitle">About Me</h1>
-                <p>Hi! My name is Riya Jain, I'm recently graduated with a B.S. in Computer Science from California State University, Fullerton (CSUF) and am an incoming M.S. Computer Science (AI) student at the University of Southern California (USC). I enjoy building AI-powered products that solve real-world problems, from workflow automation and intelligent agents to machine learning and full-stack applications. My experience spans AI research, enterprise AI integration, and rapid product development, with a focus on turning ideas into practical tools that create measurable impact. </p>
+                <p>Hi! My name is Riya Jain, I'm recently graduated with a B.S. in Computer Science from California State University, Fullerton (CSUF) and am an incoming M.S. Computer Science (AI) student at the University of Southern California (USC). I enjoy building AI-powered products that solve real-world problems, from workflow automation and intelligent agents to machine learning and full-stack applications. My experience spans AI research, enterprise AI integration, and rapid product development, with a focus on turning ideas into practical tools that create measurable impact.</p>
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('resume')">Resume</p>
+                    <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience', this)">Experience</p>
+                    <p class="tab-links" onclick="opentab('education', this)">Education</p>
+                    <p class="tab-links" onclick="opentab('resume', this)">Resume</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>AI/ML</span><br>GenAI<br>Prompt Engineering</li>
                         <li><span>Data Science</span><br>Data Manipulation<br>Data Analysis<br>Data Analytics</li>
-                        <li><span>Languages</span><br>Python<br>HTML\CSS<br>C++</li>
-                        <li><span>Libraries</span><br>Sckit Learn<br>Pandas<br>Numpy</li>
+                        <li><span>Languages</span><br>Python<br>HTML/CSS<br>C++</li>
+                        <li><span>Libraries</span><br>Scikit Learn<br>Pandas<br>Numpy</li>
                         <li><span>Software Engineering</span><br>Scrum<br>Agile</li>
                         <li><span>Software</span><br>Jupyter Notebook<br>Google Colab<br>Linux/Unix<br>VSCode</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>January 2026 - January 2026</span><br>Product Engineering Intern: Hyperkin</li>
-                        <li><span>July 2025 - August 2025</span><br>AI Intern: OSI Digital</li>
-                        <li><span>May 2024 - Present</span><br>Coding Instructor: Coding Minds Academy</li>
-                        <li><span>May 2024 - August 2024</span><br> Data Science Research Intern: CIC | PCUBED</li>
-                        <li><span>May 2023 - August 2023</span><br>Pairs Trading Research Intern: CIC | PCUBED</li>
-                        <li><span>June 2021 - August 2021</span><br>Ralphs' Grocery Store</li>
+                        <li>
+                            <span>January 2026 - January 2026</span>
+                            <span class="experience-role">Product Engineering Intern: Hyperkin</span>
+                            <ul class="experience-bullets">
+                                <li>Worked on a project using 3D modeling software, Shapr3D where I led the design aspect of the product that was told to create to us.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>July 2025 - August 2025</span>
+                            <span class="experience-role">AI Intern: OSI Digital</span>
+                            <ul class="experience-bullets">
+                                <li>Drove LLM production integration for enterprise clients by delivering engineer training and live demos, accelerating AI workflow adoption across 3 client teams.</li>
+                                <li>Designed and deployed 5+ AI orchestration agents in Dell Boomi (AWS Bedrock) to automate HTML, PDF, and SQL data workflows, reducing manual processing time by 40%.</li>
+                                <li>Built and deployed a Slack bot using OpenAI API, Flask, and Boomi to automate internal workflows, improving team response efficiency by 25% through secure, production-grade deployment.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>May 2024 - Present</span>
+                            <span class="experience-role">Coding Instructor: Coding Minds Academy</span>
+                            <ul class="experience-bullets">
+                                <li>Taught 50+ students applied AI concepts including ML, NLP, and computer vision through hands-on Python projects.</li>
+                                <li>Guided student teams to deploy functional ML models such as KNN, CNNs, and Decision Trees for real-world problem solving.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>May 2024 - August 2024</span>
+                            <span class="experience-role">Data Science Research Intern: CIC | PCUBED</span>
+                            <ul class="experience-bullets">
+                                <li>Built predictive models using L1-regularized logistic and linear regression to identify heart disease risk factors in women, achieving 90% AUC-ROC.</li>
+                                <li>Optimized feature selection and model interpretability, reducing complexity while maintaining predictive performance.</li>
+                                <li>Presented insights at CSUF Undergraduate Research Symposium, connecting cholesterol levels to heart failure risk.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>May 2023 - August 2023</span>
+                            <span class="experience-role">Pairs Trading Research Intern: CIC | PCUBED</span>
+                            <ul class="experience-bullets">
+                                <li>Led a research project using pairs trading to predict stock price movements and optimize trading strategies of Mastercard and Visa.</li>
+                                <li>Utilized statistical analysis and machine learning techniques to identify correlation and patterns in stock price movements and develop trading strategies.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>June 2021 - August 2021</span>
+                            <span class="experience-role">Ralphs' Grocery Store</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -71,317 +110,191 @@
                 </div>
                 <div class="tab-contents" id="resume">
                     <ul>
-                        <li><a href="Riya Jain- Resume (undergrad).pdf" download class="btn"> ~ Download my Resume! ~  </a></li>
+                        <li><a href="Riya Jain- Resume (undergrad).pdf" download class="btn">~ Download my Resume! ~</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- ----------projects------------- -->
+
 <div id="projects">
     <div class="container">
         <h1 class="subtitle">My Projects</h1>
         <div class="project-list">
-            <div>
-                <i class="ri-aliens-line"></i>
-                <h2>Space Invaders Gameboy – Theta Tau – Phi Epsilon Chapter(CSUF)</h2>
-                <p>Utilized PyGames to develop a 2D array and display a ship at the bottom of the screen for a game interface. <br> Integrated a Raspberry Pi with a 3D-printed Gameboy to display a coded Space Invaders game on the screen. <br>Applied AutoCAD and SolidWorks to design and measure the overall dimensions of the Gameboy.</p>
-                <a href = "#">Learn more</a>
+            <div class="project-card">
+                <i class="ri-calendar-schedule-line"></i>
+                <h2>CircleUp</h2>
+                <p class="project-tech">Fetch AI, Go, Vue, Docker, Vite, React, MongoDB, Render · LA Hacks 2026</p>
+                <ul class="project-bullets">
+                    <li>Built a group scheduling platform at LA Hacks by forking the open-source Timeful app, enabling teams to find overlapping availability through shared session links and a collaborative poll and calendar flow.</li>
+                </ul>
+                <div class="project-details">
+                    <ul class="project-bullets">
+                        <li>Developed a screenshot-to-schedule feature where users upload calendar images via Cloudinary; the backend extracts free and busy blocks using Claude AI with a Pytesseract OCR fallback, then allows users to review and apply time slots to events.</li>
+                        <li>Integrated Fetch.ai agentic endpoints to rank optimal meeting windows, recommend meeting logistics, and surface nearby location suggestions based on geolocation, exposed directly in the app as an interactive AI recommendation feature.</li>
+                    </ul>
+                    <a href="https://github.com/amychen9/la-hacks-26" target="_blank" rel="noopener noreferrer" class="project-github"><i class="ri-github-fill"></i> View on GitHub</a>
+                </div>
+                <button type="button" class="project-toggle" onclick="toggleProject(this)">Learn more</button>
             </div>
-            <div>
+            <div class="project-card">
+                <i class="ri-augmented-reality-line"></i>
+                <h2>Agentic XR Intelligence</h2>
+                <p class="project-tech">Unity, ARCore, ARKit, Open AI LLMs, C# · Aug 2025 – Dec 2025</p>
+                <ul class="project-bullets">
+                    <li>Built a multimodal agent pipeline combining spatial recognition (MediaPipe) and LLM reasoning for real-time object interaction in XR.</li>
+                </ul>
+                <div class="project-details">
+                    <ul class="project-bullets">
+                        <li>Implemented retrieval-based prompting enabling context-aware generative actions in augmented reality environments.</li>
+                        <li>Integrated CI/CD pipeline via GitHub Actions, reducing build time by 50% and enforcing automated quality gates before each release.</li>
+                    </ul>
+                    <a href="https://github.com/bautista-aa/Augmented-Object-Intelligence-with-XR-Objects" target="_blank" rel="noopener noreferrer" class="project-github"><i class="ri-github-fill"></i> View on GitHub</a>
+                </div>
+                <button type="button" class="project-toggle" onclick="toggleProject(this)">Learn more</button>
+            </div>
+            <div class="project-card">
+                <i class="ri-brain-line"></i>
+                <h2>Prompt Engineering with TinyLLama</h2>
+                <p class="project-tech">Python, TinyLLama, LLMs · Research Scholar · May 2025 – Present</p>
+                <ul class="project-bullets">
+                    <li>Applied TinyLLama for LLM-based tasks, achieving 65% improvement in efficiency and response quality.</li>
+                </ul>
+                <div class="project-details">
+                    <ul class="project-bullets">
+                        <li>Reduced entropy via gamma sharpening (gamma = 2.0) for semantic embedding optimization.</li>
+                        <li>Demonstrated advanced prompt engineering techniques including chaining, contextual embedding, and reasoning over structured data.</li>
+                        <li>Created reusable prompt templates to streamline AI-driven workflows and enable scalable automation.</li>
+                    </ul>
+                </div>
+                <button type="button" class="project-toggle" onclick="toggleProject(this)">Learn more</button>
+            </div>
+            <div class="project-card">
+                <i class="ri-speech-line"></i>
+                <h2>NLP Driven Multimodal for Individuals with Impaired Speech</h2>
+                <p class="project-tech">ML, OpenCV, TTS, TF-IDF · Published in IEEE Xplore · Jan 2025 – May 2025</p>
+                <ul class="project-bullets">
+                    <li>Developed emotion-aware system integrating text, image, and audio for multimodal sentiment analysis using TF-IDF vectorization.</li>
+                </ul>
+                <div class="project-details">
+                    <ul class="project-bullets">
+                        <li>Applied OCR (OpenCV/Pytesseract) and TTS (gTTS) for accessibility to recognize characters in an image and text and turn the text into audio.</li>
+                        <li>Evaluated model quality using standard metrics, achieving 90% F1-score across accuracy, precision, recall, and confusion matrix analysis.</li>
+                    </ul>
+                    <a href="https://ieeexplore.ieee.org/document/11266334" target="_blank" rel="noopener noreferrer" class="project-github"><i class="ri-external-link-line"></i> View our paper on IEEE Xplore</a>
+                </div>
+                <button type="button" class="project-toggle" onclick="toggleProject(this)">Learn more</button>
+            </div>
+            <div class="project-card">
+                <i class="ri-health-book-line"></i>
+                <h2>SkinAI</h2>
+                <p class="project-tech">CNN, TensorFlow, Keras · Jan 2025 – May 2025</p>
+                <ul class="project-bullets">
+                    <li>Developed CNN-based classifier for dermatological image analysis using the HAM10000 dataset with Keras and TensorFlow.</li>
+                </ul>
+                <div class="project-details">
+                    <ul class="project-bullets">
+                        <li>Designed and implemented the web UI for the SkinAI platform to enable users to upload dermatological images and view model predictions.</li>
+                        <li>Optimized model inference to under 2 seconds through pruning and quantization, achieving 92% validation accuracy across test cases.</li>
+                    </ul>
+                    <a href="https://github.com/CajanGit/SkinAI" target="_blank" rel="noopener noreferrer" class="project-github"><i class="ri-github-fill"></i> View on GitHub</a>
+                </div>
+                <button type="button" class="project-toggle" onclick="toggleProject(this)">Learn more</button>
+            </div>
+            <div class="project-card">
+                <i class="ri-aliens-line"></i>
+                <h2>Space Invaders Gameboy – Theta Tau – Phi Epsilon Chapter (CSUF)</h2>
+                <p class="project-tech">PyGame, Raspberry Pi, AutoCAD, SolidWorks</p>
+                <ul class="project-bullets">
+                    <li>Utilized PyGame to develop a 2D array and display a ship at the bottom of the screen for a game interface.</li>
+                </ul>
+                <div class="project-details">
+                    <ul class="project-bullets">
+                        <li>Integrated a Raspberry Pi with a 3D-printed Gameboy to display a coded Space Invaders game on the screen.</li>
+                        <li>Applied AutoCAD and SolidWorks to design and measure the overall dimensions of the Gameboy.</li>
+                    </ul>
+                </div>
+                <button type="button" class="project-toggle" onclick="toggleProject(this)">Learn more</button>
+            </div>
+            <div class="project-card">
                 <i class="ri-music-line"></i>
                 <h2>Forte Music Player</h2>
-                <p>Developed a music player integrated with Spotify via the Spotify API, enabling users to sign in to their Spotify accounts. <br>Primarily utilized HTML, CSS and JavaScript for the development of the user interface and functionality.</p>
-                <a href = "#">Learn more</a>
+                <p class="project-tech">HTML, CSS, JavaScript, Spotify API</p>
+                <ul class="project-bullets">
+                    <li>Developed a music player integrated with Spotify via the Spotify API, enabling users to sign in to their Spotify accounts.</li>
+                </ul>
+                <div class="project-details">
+                    <ul class="project-bullets">
+                        <li>Primarily utilized HTML, CSS, and JavaScript for the development of the user interface and functionality.</li>
+                    </ul>
+                    <a href="https://github.com/kuhbobe/forte" target="_blank" rel="noopener noreferrer" class="project-github"><i class="ri-github-fill"></i> View on GitHub</a>
+                </div>
+                <button type="button" class="project-toggle" onclick="toggleProject(this)">Learn more</button>
             </div>
-            <div>
+            <div class="project-card">
                 <i class="ri-emotion-happy-line"></i>
                 <h2>CaptionToColor</h2>
-                <p>Created a website using HTML and CSS during FullyHacks, incorporating sentiment analysis. <br>Leveraged the Twitter API to analyze user-generated captions or posts, applying sentiment analysis techniques.
-                <br>Trained our model using this to categorize captions into three moods: “Happy”: Yellow, “Sad”: Blue, “Neutral”: Pink, assigning
-                    each user entry to the appropriate mood category..</p>
-                <a href = "#">Learn more</a>
+                <p class="project-tech">HTML, CSS, Twitter API, Sentiment Analysis · FullyHacks</p>
+                <ul class="project-bullets">
+                    <li>Created a website using HTML and CSS during FullyHacks, incorporating sentiment analysis.</li>
+                </ul>
+                <div class="project-details">
+                    <ul class="project-bullets">
+                        <li>Leveraged the Twitter API to analyze user-generated captions or posts, applying sentiment analysis techniques.</li>
+                        <li>Trained a model to categorize captions into three moods: “Happy” (Yellow), “Sad” (Blue), and “Neutral” (Pink), assigning each user entry to the appropriate mood category.</li>
+                    </ul>
+                </div>
+                <button type="button" class="project-toggle" onclick="toggleProject(this)">Learn more</button>
             </div>
-            
         </div>
     </div>
 </div>
 
-<!-- ----------projects------------- -->
 <div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
-               <h1 class="subtitle">Contact Me</h1> 
-               <p>riyajain0520@gmail.com</p>
-               <div class="social-icons">
-                <a href="https://www.linkedin.com/in/riyajain20/"><i class="ri-linkedin-box-fill"></i></a>
-                <a href="mailto:riyajain0520@gmail.com?cc=riyajain0520@gmail.com"><i class="ri-mail-line"></i></a>  
-               </div>
+                <h1 class="subtitle">Contact Me</h1>
+                <p>riyajain0520@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/riyajain20/"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="mailto:riyajain0520@gmail.com?cc=riyajain0520@gmail.com"><i class="ri-mail-line"></i></a>
+                </div>
             </div>
-            <div class="contact-right"></div>
+            <div class="contact-right">
                 <form>
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder=" Your Email" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+            </div>
         </div>
     </div>
 </div>
 
-
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
+
+    function opentab(tabname, el) {
+        for (var tablink of tablinks) {
             tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
+        for (var tabcontent of tabcontents) {
             tabcontent.classList.remove("active-tab");
         }
-        event.currentTarget.classList.add("active-link");
+        el.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
 
-
+    function toggleProject(button) {
+        var card = button.closest(".project-card");
+        var details = card.querySelector(".project-details");
+        var isOpen = details.classList.toggle("open");
+        button.textContent = isOpen ? "Show less" : "Learn more";
+    }
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
-    <title>Riya Jain</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <div class= "nav_content">
-        <div class="logo"><a href ="#">Riya</a></div>
-            <label for="check" class="checkbox">
-                <i class="ri-menu-line"></i>
-            </label>
-            <input type="checkbox" name"check" id="check">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact Me</a></li>
-            </ul>
-        </div>
-    </nav>
-    <section class="section">
-        <div class =".section_container">
-            <div class="content">
-                <p class="subtitle">HELLO</p>
-                    <h1 class="title">
-                        I'm <span>Riya!<br>a</span> Computer Science Student at California State University, Fullerton
-                    </h1>
-                <p class="description">
-                    Welcome to my Personal Portfolio! I'm Riya Jain, a 3rd year computer science student at CSUF. I am a skilled and creative student with a passion in AI and ML. Through my experience in past research projects and my job, I have gained more valuable experience than ever. Add some more stuff here! that sounds nice and well developed.                  
-                </p>
-                <div class="action__btns">
-                    <button class="hire_me">Hire Me</button>
-                    <button class="hire_me">Portfolio</button>
-                </div>
-            </div>
-            <div class="image">
-                <img src="images/Screenshot 2024-12-07 at 8.51.11 PM.png" alt="Portfolio">
-            </div>
-        </div>
-    </section>
-    </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- -->
-
-<!-- <!DOCTYPE html>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge"m>
-    <title>Riya Jain</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-    <body>
-        <nav>
-            <div class= "nav_content">
-            <div class="logo"><a href ="#">Riya</a></div>
-                <label for="check" class="checkbox">
-                    <i class="ri-menu-line"></i>
-                </label>
-                <input type="checkbox" name"check" id="check">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact Me!</a></li>
-                </ul>
-            </div>
-        </nav>
-    <section id="home" class="section">
-        <div class="hero">
-            <img src="images/Headshot copy.JPG" alt="Your Headshot" class="headshot" style="width: 200px; height: 300px;">
-            <div>
-                <h1>Hi! I'm Riya Jain</h1>
-                <p>Computer Science Student | Aspiring Developer</p>
-            </div>
-        </div>
-    </section>    
-
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>
-            I'm a passionate computer science student with an interest in [your areas of interest, e.g., AI, web development, etc.].
-            I love solving problems, building projects, and learning new technologies.
-        </p>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>A brief description of Project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>A brief description of Project 2.</p>
-        </div>
-    </section>
-
-    <section id="resume" class="section">
-        <h2>Resume</h2>
-        <p>Download my resume below:</p>
-        <a href="Resume_RiyaJain(updatedoct2024) copy.pdf" download class="btn">Download Resume</a>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-            <label>
-                <i class="ri-linkedin-box-fill"></i>
-            </label>
-
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Riya Jain. All rights reserved.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
-</body>
-</html> -->

@@ -149,9 +149,38 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 
-.tab-contents ul li span{
+.tab-contents ul li > span:first-child{
     color: #ffc0fe;
-    font-size: 14px;  
+    font-size: 14px;
+}
+
+#experience ul > li{
+    margin-bottom: 24px;
+}
+
+#experience .experience-role{
+    display: block;
+    margin: 6px 0 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#experience .experience-bullets{
+    margin: 8px 0 0;
+    padding-left: 20px;
+}
+
+#experience .experience-bullets li{
+    list-style: disc;
+    margin: 6px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d4d4d4;
+}
+
+#experience .experience-bullets li::marker{
+    color: #ffc0fe;
 }
 
 .tab-contents{
@@ -192,37 +221,90 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 
-.project-list div{
+.project-card{
     background: #373737;
     padding: 40px;
     font-size: 13px;
-    font-weight: 300px;
+    font-weight: 300;
     border-radius: 10px;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}  
+}
 
-.project-list div i{
+.project-card i{
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.project-list div h2{
+.project-card h2{
     font-weight: 500;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.project-list div a{
+.project-tech{
+    color: #ffc0fe;
+    font-size: 12px;
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+.project-bullets{
+    margin: 0;
+    padding-left: 18px;
+}
+
+.project-bullets li{
+    margin: 8px 0;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+.project-bullets li::marker{
+    color: #ffc0fe;
+}
+
+.project-details{
+    display: none;
+    margin-top: 4px;
+}
+
+.project-details.open{
+    display: block;
+}
+
+.project-github{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     text-decoration: none;
+    color: #f4bbff;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.project-github:hover{
+    color: #ffffff;
+}
+
+.project-toggle{
+    background: none;
+    border: none;
+    padding: 0;
     color: #f4bbff;
     font-size: 12px;
     margin-top: 20px;
-    display: inline-block;
+    cursor: pointer;
+    text-align: left;
 }
 
-.project-list div:hover{
+.project-toggle:hover{
+    color: #ffffff;
+}
+
+.project-card:hover{
     background: #6c4973;
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 /* ----------contact----------- */
