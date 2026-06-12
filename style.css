@@ -359,6 +359,29 @@ form .btn2{
     cursor: pointer;
 }
 
+form .btn2:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.form-status{
+    min-height: 1.25rem;
+    margin: 0;
+    font-size: 14px;
+}
+
+.form-status.success{
+    color: #b8ffb8;
+}
+
+.form-status.error{
+    color: #ffb8b8;
+}
+
+.form-status.loading{
+    color: #ffc0fe;
+}
+
 /* ------------css for small screen------------ */
 
 nav .ri{

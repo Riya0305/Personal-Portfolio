@@ -263,11 +263,12 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+                    <p id="form-status" class="form-status" aria-live="polite"></p>
+                    <button type="submit" class="btn btn2" id="submit-btn">Submit</button>
                 </form>
             </div>
         </div>
@@ -296,5 +297,6 @@
         button.textContent = isOpen ? "Show less" : "Learn more";
     }
 </script>
+<script src="script.js"></script>
 </body>
 </html>
